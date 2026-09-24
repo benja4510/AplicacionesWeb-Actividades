@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Lic. Martín Gómez</title>
+    <link rel="stylesheet" href="./recursos/estilos/index.css">
+    <link rel="icon" href="./recursos/imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a href="index.html" aria-label="Ir al Inicio">
+            <img src="./recursos/imagenes/favicon.ico" alt="Logo Lic. Martín Gómez">
+        </a>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <img src="./recursos/imagenes/pexels-luisbecerrafotografo-5906261 (3).jpg" alt="Logo Lic. Martín Gómez">
+        <h1>Contacto</h1>
+        <h2>Escribime</h2>
+        <p>Si tenés alguna consulta sobre los turnos disponibles, las modalidades de atención o querés coordinar una primera entrevista, completá el siguiente formulario. Te responderé a la brevedad a tu correo electrónico.</p>
+        
+        <form action="contacto.html" method="post">
+            <label for="id-nombre">Nombre y Apellido</label>
+            <input type="text" name="nombre" id="id-nombre">
+
+            <label for="id-telefono">Teléfono de contacto</label>
+            <input type="tel" name="telefono" id="id-telefono">
+
+            <label for="id-email">Correo Electrónico</label>
+            <input type="email" name="email" id="id-email">
+
+            <label for="id-motivo">Motivo de consulta</label>
+            <select name="motivo-consulta" id="id-motivo">
+                <option value="primera">Primera vez</option>
+                <option value="seguimiento">Seguimiento</option>
+                <option value="general">Consultas generales</option>
+            </select>
+
+            <label for="id-edad">Edad</label>
+            <input type="number" name="edad" id="id-edad">
+
+            <label for="id-comentario">Mensaje o detalle de la consulta</label>
+            <textarea name="comentario" id="id-comentario"></textarea>
+            
+            <button type="reset">Limpiar</button> 
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Donde estoy</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.3503270546285!2d-64.1884278!3d-31.432021099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28c881143dd%3A0xa685abda62d1237e!2sPje.%20Valtodano%201351%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1788379996651!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Ubicación del consultorio"></iframe>
+    </main>
+    <footer class="pie-principal">
+        <ul>
+            <li>
+                <a href="https://instagram.com/@lic.martingomez" target="_blank">@lic.martingomez</a>
+            </li>
+            <li>Pje. Valtodano 1351 - Córdoba</li>
+        </ul>
+    </footer>
+    <a href="https://wa.me/5493510000000" class="boton-flotante" target="_blank"  aria-label="Contactar por mensajería">
+        <img src="./recursos/imagenes/mensaje.ico" alt="Mensaje">
+    </a>
+</body>
+</html> 
