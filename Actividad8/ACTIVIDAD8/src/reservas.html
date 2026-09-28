@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- Encabezado con el mismo layout general -->
     <header class="encabezado-principal">
         <a href="index.html">
             <img src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable">
@@ -21,35 +22,52 @@
     </header>
 
     <main class="contenido-principal">
+        <!-- <h1> único para el título principal -->
         <h1>Reservas</h1>
         
         <div class="contenedor-form">
-            <h2>Formulario de Consulta</h2>
+            <h2>Formulario de Consulta y Reserva</h2>
+
+            <!-- 'action' especifica el destino y 'method' define el método -->
             <form action="#" method="POST">
-                <!-- Labels enlazados correctamente mediante id y for -->
-                <label for="nombre">Nombre de la persona que consulta:</label>
-                <input type="text" id="nombre" name="nombre" required>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
+                <!-- Se une cada input dentro de su <label> para vincularlos automáticamente -->
+                <label class="campo-form">
+                    Nombre de la persona que consulta:
+                    <input type="text" name="nombre" required placeholder="Ej: Juan Pérez">
+                </label>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label class="campo-form">
+                    Teléfono:
+                    <input type="tel" name="telefono" required placeholder="Ej: 3511234567">
+                </label>
 
-                <label for="fecha-desde">Fecha desde:</label>
-                <input type="date" id="fecha-desde" name="fecha_desde" required>
+                <label class="campo-form">
+                    Email:
+                    <input type="email" name="email" required placeholder="ejemplo@correo.com">
+                </label>
 
-                <label for="fecha-hasta">Fecha hasta:</label>
-                <input type="date" id="fecha-hasta" name="fecha_hasta" required>
+                <label class="campo-form">
+                    Fecha desde:
+                    <input type="date" name="fecha_desde" required>
+                </label>
 
-                <label for="comentario">Comentario:</label>
-                <textarea id="comentario" name="comentario" rows="4"></textarea>
+                <label class="campo-form">
+                    Fecha hasta:
+                    <input type="date" name="fecha_hasta" required>
+                </label>
+
+                <label class="campo-form">
+                    Comentario:
+                    <textarea name="comentario" rows="4" placeholder="Escriba su consulta..."></textarea>
+                </label>
 
                 <button type="submit">Enviar Consulta</button>
             </form>
         </div>
     </main>
 
+    <!-- Pie de página unificado -->
     <footer class="pie-principal">
         <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
     </footer>

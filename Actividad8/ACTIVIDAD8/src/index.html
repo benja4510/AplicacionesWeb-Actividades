@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retiro Sustentable - Catálogo</title>
-    <!-- Vinculación del CSS -->
+    <!-- Vinculación de la hoja de estilos CSS general -->
     <link rel="stylesheet" href="./recursos/css/index.css">
 </head>
 <body>
 
-    <!-- Encabezado semántico principal -->
+    <!-- Se utiliza <header> con clase en lugar de un <div> genérico para definir el encabezado del sitio -->
     <header class="encabezado-principal">
-        <!-- Logo enlazado al inicio con atributo alt descriptivo -->
+        <!-- El isologotipo actúa como enlace a la página de inicio (index.html) -->
         <a href="index.html">
+            <!-- Se incluye el atributo 'alt' para describir la imagen a lectores de pantalla y buscadores -->
             <img src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable">
         </a>
         
-        <!-- Navegación principal -->
+        <!-- Se utiliza <nav> para agrupar el menú de navegación principal del sitio -->
         <nav>
             <ul class="vinculos">
                 <li><a href="index.html">Inicio</a></li>
@@ -25,56 +26,64 @@
         </nav>
     </header>
 
-    <!-- Contenido principal -->
+    <!-- Se agrego <main> para el contenido único y principal de la página de catálogo -->
     <main class="contenido-principal">
+        <!-- Se utiliza un único <h1> principal por página para indicar el título descriptivo de mayor jerarquía -->
         <h1>Cabañas para Alquiler</h1>
-        <p>Bienvenido a nuestro catálogo de cabañas en San Javier, Traslasierras.</p>
+        <p>Bienvenido a nuestro catálogo de cabañas en San Javier, Traslasierras. Explora nuestras opciones disponibles.</p>
 
-        <!-- Listado de cabañas -->
+        <!-- Se agrupan los ítems del catálogo dentro de un contenedor <section> -->
         <section class="catalogo">
+            
+            <!-- Cada cabaña se estructura como un <article> independiente dentro del catálogo -->
             <article>
                 <h2>Cabaña 1</h2>
                 <picture>
-                    <img src="./recursos/imagenes/modelo1.webp" alt="Fotografía exterior Cabaña 1">
+                    <!-- Se agrego la imagen con su ruta correspondiente y texto descriptivo 'alt' -->
+                    <img src="./recursos/imagenes/modelo1.webp" alt="Fotografía de la fachada de Cabaña 1 con vista a las montañas">
                 </picture>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Precio por día: $45.000</p>
-                <a href="reservas.html">Reservar cabaña</a>
+                <!-- Texto descriptivo generado con lorem ipsum -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cabaña acogedora totalmente equipada para su descanso.</p>
+                <!-- Información obligatoria del precio diario -->
+                <p class="precio">Precio por día: $45.000</p>
+                <!-- Enlace individual que dirige a la página de reservas -->
+                <a href="reservas.html" class="boton-reserva">Reservar cabaña</a>
             </article>
 
             <article>
                 <h2>Cabaña 2</h2>
                 <picture>
-                    <img src="./recursos/imagenes/modelo2.webp" alt="Fotografía exterior Cabaña 2">
+                    <img src="./recursos/imagenes/modelo2.webp" alt="Fotografía de Cabaña 2 rodeada de naturaleza">
                 </picture>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Precio por día: $50.000</p>
-                <a href="reservas.html">Reservar cabaña</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Espacios amplios con iluminación natural y deck privado.</p>
+                <p class="precio">Precio por día: $50.000</p>
+                <a href="reservas.html" class="boton-reserva">Reservar cabaña</a>
             </article>
 
             <article>
                 <h2>Cabaña 3</h2>
                 <picture>
-                    <img src="./recursos/imagenes/modelo3.webp" alt="Fotografía exterior Cabaña 3">
+                    <img src="./recursos/imagenes/modelo3.webp" alt="Fotografía de Cabaña 3 estilo rústico sustentable">
                 </picture>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Precio por día: $48.000</p>
-                <a href="reservas.html">Reservar cabaña</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Construcción ecológica equipada con energía solar.</p>
+                <p class="precio">Precio por día: $48.000</p>
+                <a href="reservas.html" class="boton-reserva">Reservar cabaña</a>
             </article>
 
             <article>
                 <h2>Cabaña 4</h2>
                 <picture>
-                    <img src="./recursos/imagenes/modelo4.webp" alt="Fotografía exterior Cabaña 4">
+                    <img src="./recursos/imagenes/modelo4.webp" alt="Fotografía de Cabaña 4 de dos plantas">
                 </picture>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Precio por día: $55.000</p>
-                <a href="reservas.html">Reservar cabaña</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ideal para grupos familiares, capacidad hasta 6 personas.</p>
+                <p class="precio">Precio por día: $55.000</p>
+                <a href="reservas.html" class="boton-reserva">Reservar cabaña</a>
             </article>
+
         </section>
     </main>
 
-    <!-- Pie de página semántico -->
+    <!-- Se agrega <footer> para el pie de página general en lugar de un <div> genérico -->
     <footer class="pie-principal">
         <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
     </footer>
