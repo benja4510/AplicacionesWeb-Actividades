@@ -1,0 +1,106 @@
+/*
+Sintaxis
+*/
+
+/* modelo de caja alternativo */
+* {
+    box-sizing: border-box;
+}
+
+/* importar fuente (se usa Sora según la consigna o Poppins según tu archivo) */
+@font-face {
+    font-family: 'Sora';
+    src: url('../fuentes/Sora-Regular.ttf');
+}
+
+/* reseteo */
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+/* selectores de TIPO */
+
+html {
+    font-family: 'Sora', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px; /* tamaño general requerido en la consigna */
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* selectores de CLASE */
+
+/* 1. Regla de clase para el bloque de Encabezado */
+.encabezado-principal {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex; /* display flex organiza el header */
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(61, 158, 142); /* Fondo igual al del pie */
+    justify-content: space-between;
+    padding: 5px 10px 20px 10px;
+    border-bottom: 4px solid #d2dad7;
+}
+
+.encabezado-principal img {
+    width: 50px;
+    height: auto;
+}
+
+.encabezado-principal .vinculos {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+/* 2. Regla de clase para el bloque de Contenido Principal */
+.contenido-principal {
+    background-color: #f5f5f5;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.contenido-principal .contenedor-form {
+    padding: 20px 20%;
+}
+
+.contenido-principal .contenedor-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para las tarjetas del catálogo y sus imágenes */
+article picture img {
+    width: 100%;       /* Ocupa el ancho máximo de su contenedor */
+    max-width: 300px;  /* Evita que se haga más grande de 300px */
+    height: auto;      /* Mantiene la proporción */
+    display: block;
+}
+
+/* 3. Regla de clase para el bloque de Pie de página */
+.pie-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(61, 158, 142); /* Mismo color de fondo que el encabezado */
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 4px solid #d2dad7;
+}
+
+.pie-principal .mensajeria {
+    list-style: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

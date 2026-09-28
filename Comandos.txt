@@ -1,6 +1,7 @@
 git config user.name benja4510
 git config user.email benjamindiaz4518@gmail.com
 crear clase..
+Cambiar de powershell a COMMAND PROMPT
 en cmd : cd clase... enter
 Instalar pnpm -> npm i -g pnpm
 Inicializar proyecto -> pn init

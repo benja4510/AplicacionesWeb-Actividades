@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+
+    <header class="encabezado-principal">
+        <a href="index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable">
+        </a>
+        <nav>
+            <ul class="vinculos">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <h1>Reservas</h1>
+        
+        <div class="contenedor-form">
+            <h2>Formulario de Consulta</h2>
+            <form action="#" method="POST">
+                <!-- Labels enlazados correctamente mediante id y for -->
+                <label for="nombre">Nombre de la persona que consulta:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="fecha-desde">Fecha desde:</label>
+                <input type="date" id="fecha-desde" name="fecha_desde" required>
+
+                <label for="fecha-hasta">Fecha hasta:</label>
+                <input type="date" id="fecha-hasta" name="fecha_hasta" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+                <button type="submit">Enviar Consulta</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="pie-principal">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
