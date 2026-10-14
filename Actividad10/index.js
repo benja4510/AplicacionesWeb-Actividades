@@ -37,15 +37,15 @@ for (let i = 1; i <= 10; i++) {
 }
 
 for (let i = 10; i >= 1; i--) {
-  console.log(i);
+    console.log(i);
 }
 
 
 for (let i = 0; i < 20; i++) {
   if (i % 2 === 0) {
-    console.log(`El número ${i} es par`);
+    console.log('El número ' + i + ' es par');
   } else {
-    console.log(`El número ${i} es impar`);
+    console.log('El número ' + i + ' es impar');
   }
 }
 
